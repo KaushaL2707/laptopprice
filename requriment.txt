@@ -1,0 +1,11 @@
+numpy
+pandas
+sklearn
+streamlit
+sklearn.compose
+sklearn.pipeline
+sklearn.preprocessing
+sklearn.model_selection
+sklearn.metrics
+sklearn.model_selection
+sklearn.ensemble
