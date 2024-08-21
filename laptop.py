@@ -18,7 +18,7 @@ y = np.log(df['Price'])
 X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.15,random_state=2)
 #Random Forest
 step1 = ColumnTransformer(transformers=[
-    ('col_tnf',OneHotEncoder(sparse=False,drop='first'),[0,1,7,10,11])
+    ('col_tnf',OneHotEncoder(sparse_output=False,drop='first'),[0,1,7,10,11])
 ],remainder='passthrough')
 
 step2 = RandomForestRegressor(n_estimators=100,
